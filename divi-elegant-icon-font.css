@@ -28,31 +28,31 @@ input[type=radio] + label:hover {
 
 /* Set checkbox to ET icons: normal, hover, checked, & checked hover */
 input[type=checkbox] + label:before { 
-  content: '56'; 
+  content: '\56'; 
 }
 input[type=checkbox] + label:hover:before {
-  content: '5a'; 
+  content: '\5a'; 
   filter: alpha(opacity=20); 
   opacity: 0.2;
 }
 input[type=checkbox]:checked + label:before {
-  content: '5a'; 
+  content: '\5a'; 
 }
 input[type=checkbox]:checked + label:hover:before { 
   filter: alpha(opacity=100); opacity: 1; 
 }
 
 /* Set radio buttons Divi icons: normal, hover, checked, & checked hover */
-input[type=radio]:before { 
-  content: '5b';
+input[type=radio] + label:before { 
+  content: '\5b';
 }
-input[type=radio]:hover:before { 
-  content: '5c'; 
+input[type=radio] + label:hover:before { 
+  content: '\5c'; 
   filter: alpha(opacity=20); 
   opacity: 0.2; 
 }
-input[type=radio]:checked:before { 
-  content: '5c'; 
+input[type=radio]:checked + label:before { 
+  content: '\5c'; 
 }
 input[type=radio]:checked + label:hover:before { 
   filter: alpha(opacity=100); opacity: 1; 
