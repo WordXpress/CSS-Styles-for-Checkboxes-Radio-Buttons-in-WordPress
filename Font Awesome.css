@@ -11,7 +11,7 @@ input[type=checkbox], input[type=radio] {
 
 /* Set Font Awesome font, size, & positioning for the checkboxes/radio buttons plus the cursor on hover */
 input[type=checkbox] + label:before,
-input[type=checkbox] + span.woocommerce-terms-and-conditions-checkbox-text:before,
+input[type=checkbox] + span:before,
 input[type=radio] + label:before {
   visibility: visible;  
   font-family: "FontAwesome"!important;
@@ -22,7 +22,7 @@ input[type=radio] + label:before {
 }
 
 input[type=checkbox] + label:hover,
-input[type=checkbox] + span.woocommerce-terms-and-conditions-checkbox-text:hover,
+input[type=checkbox] + span:hover,
 input[type=radio] + label:hover { 
   cursor: pointer; 
 }
@@ -31,21 +31,21 @@ input[type=radio] + label:hover {
 
 /* Set checkbox to FA icons: normal, hover, checked, & checked hover */
 input[type=checkbox] + label:before,
-input[type=checkbox] + span.woocommerce-terms-and-conditions-checkbox-text:before { 
+input[type=checkbox] + span:before { 
   content: '\f096'; 
 }
 input[type=checkbox] + label:hover:before,
-input[type=checkbox] + span.woocommerce-terms-and-conditions-checkbox-text:hover:before {
+input[type=checkbox] + span:before {
   content: '\f046'; 
   filter: alpha(opacity=20); 
   opacity: 0.2;
 }
 input[type=checkbox]:checked + label:before,
-input[type=checkbox]:checked + span.woocommerce-terms-and-conditions-checkbox-text:before {
+input[type=checkbox]:checked + span:before {
   content: '\f046';
 }
 input[type=checkbox]:checked + label:hover:before,
-input[type=checkbox]:checked + span.woocommerce-terms-and-conditions-checkbox-text:hover:before { 
+input[type=checkbox]:checked + span:hover:before { 
   filter: alpha(opacity=100); opacity: 1; 
 }
 
