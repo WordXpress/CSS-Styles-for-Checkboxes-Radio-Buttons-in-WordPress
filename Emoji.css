@@ -14,6 +14,7 @@ input[type=checkbox] + label:before,
 input[type=checkbox] + span.woocommerce-terms-and-conditions-checkbox-text:before,
 input[type=radio] + label:before {
   visibility: visible;
+	font-family: inherit!important;
   font-size: 22px;
   position: relative;
   top: 5px;
@@ -31,17 +32,17 @@ input[type=radio] + label:hover {
 /* Set checkbox to ET icons: normal, hover, checked, & checked hover */
 input[type=checkbox] + label:before,
 input[type=checkbox] + span.woocommerce-terms-and-conditions-checkbox-text:before { 
-  content: '\2B1C'; 
+  content: '\2B1C'!important; 
 }
 input[type=checkbox] + label:hover:before,
 input[type=checkbox] + span.woocommerce-terms-and-conditions-checkbox-text:hover:before {
-  content: '\2714'; 
+  content: '\2714'!important; 
   filter: alpha(opacity=20); 
   opacity: 0.2;
 }
 input[type=checkbox]:checked + label:before,
 input[type=checkbox]:checked + span.woocommerce-terms-and-conditions-checkbox-text:before {
-  content: '\2714';
+  content: '\2714'!important;
 }
 input[type=checkbox]:checked + label:hover:before,
 input[type=checkbox]:checked + span.woocommerce-terms-and-conditions-checkbox-text:hover:before { 
@@ -50,15 +51,15 @@ input[type=checkbox]:checked + span.woocommerce-terms-and-conditions-checkbox-te
 
 /* Set radio buttons Divi icons: normal, hover, checked, & checked hover */
 input[type=radio] + label:before { 
-  content: '\26AA';
+  content: '\26AA'!important;
 }
 input[type=radio] + label:hover:before { 
-  content: '\26AB'; 
+  content: '\26AB'!important; 
   filter: alpha(opacity=20); 
   opacity: 0.2; 
 }
 input[type=radio]:checked + label:before { 
-  content: '\26AB'; 
+  content: '\26AB'!important; 
 }
 input[type=radio]:checked + label:hover:before { 
   filter: alpha(opacity=100); opacity: 1; 
