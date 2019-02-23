@@ -14,10 +14,10 @@ input[type=checkbox] + label:before,
 input[type=checkbox] + span.woocommerce-terms-and-conditions-checkbox-text:before,
 input[type=radio] + label:before {
   visibility: visible;  
-  font-family: "FontAwesome";
-  font-size: 20px;
+  font-family: "FontAwesome"!important;
+  font-size: 25px;
   position: relative;
-  top: -7px;
+  top: 5px;
   padding-right: 8px;
 }
 
