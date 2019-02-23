@@ -16,7 +16,7 @@ input[type=radio] + label:before {
   visibility: visible;
   font-size: 22px;
   position: relative;
-  top: -9px;
+  top: 5px;
   padding-right: 8px;
 }
 
