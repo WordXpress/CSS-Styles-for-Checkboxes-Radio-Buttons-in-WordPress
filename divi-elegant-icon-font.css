@@ -9,7 +9,7 @@ input[type=checkbox], input[type=radio] {
   width: 0!important;
 }
 
-/* Set Elegant Themes font, size, & positioning for the checkboxes/radio buttons plus the cursor on hover */
+/* Set Elegant Icont font, size, & positioning for the checkboxes/radio buttons plus the cursor on hover */
 input[type=checkbox] + label:before,
 input[type=radio] + label:before {
   visibility: visible;  
