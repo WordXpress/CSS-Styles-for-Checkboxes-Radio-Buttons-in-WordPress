@@ -15,13 +15,14 @@ input[type=checkbox] + span.woocommerce-terms-and-conditions-checkbox-text:befor
 input[type=radio] + label:before {
   visibility: visible;  
   font-family: "ETmodules";
-  font-size: 22px;
+  font-size: 30px;
   position: relative;
-  top: -5px;
+  top: 6px;
+  padding-right: 8px;
 }
 
 input[type=checkbox] + label:hover,
-input[type=checkbox] + span.woocommerce-terms-and-conditions-checkbox-text:before,
+input[type=checkbox] + span.woocommerce-terms-and-conditions-checkbox-text:hover,
 input[type=radio] + label:hover { 
   cursor: pointer; 
 }
@@ -39,9 +40,9 @@ input[type=checkbox] + span.woocommerce-terms-and-conditions-checkbox-text:hover
   filter: alpha(opacity=20); 
   opacity: 0.2;
 }
-input[type=checkbox]:checked + label:before
+input[type=checkbox]:checked + label:before,
 input[type=checkbox]:checked + span.woocommerce-terms-and-conditions-checkbox-text:before {
-  content: '\5a'; 
+  content: '\5a';
 }
 input[type=checkbox]:checked + label:hover:before,
 input[type=checkbox]:checked + span.woocommerce-terms-and-conditions-checkbox-text:hover:before { 
