@@ -11,6 +11,35 @@ input[type=checkbox], input[type=radio] {
 
 /* Set Font Awesome font, size, & positioning for the checkboxes/radio buttons plus the cursor on hover */
 input[type=checkbox] + label:before,
+input[type=checkbox] + span.woocommerce-terms-and-conditions-checkbox-text:before,
+input[type=radio] + label:before {
+  visibility: visible;  
+  font-family: "FontAwesome"!important;
+  font-size: 25px;
+  position: relative;
+  top: 5px;
+  padding-right: 8px;
+}
+
+input[type=checkbox] + label:hover,
+input[type=checkbox] + span.woocommerce-terms-and-conditions-checkbox-text:hover,
+input[type=radio] + label:hover { 
+  cursor: pointer; 
+}
+
+/** SECTION 2 **/
+
+/** SECTION 1 **/
+
+/* Hide the OS/Browser checkboxes/radio buttons */
+input[type=checkbox], input[type=radio] {
+  visibility: hidden!important;
+  margin: 0!important;
+  width: 0!important;
+}
+
+/* Set Font Awesome font, size, & positioning for the checkboxes/radio buttons plus the cursor on hover */
+input[type=checkbox] + label:before,
 input[type=checkbox] + span:before,
 input[type=radio] + label:before {
   visibility: visible;  
@@ -32,34 +61,35 @@ input[type=radio] + label:hover {
 /* Set checkbox to FA icons: normal, hover, checked, & checked hover */
 input[type=checkbox] + label:before,
 input[type=checkbox] + span:before { 
-  content: '\f096'; 
+  content: '\f096'!important;
 }
 input[type=checkbox] + label:hover:before,
 input[type=checkbox] + span:before {
-  content: '\f046'; 
+  content: '\f046';
   filter: alpha(opacity=20); 
   opacity: 0.2;
 }
 input[type=checkbox]:checked + label:before,
 input[type=checkbox]:checked + span:before {
-  content: '\f046';
+  content: '\f046'!important;
 }
 input[type=checkbox]:checked + label:hover:before,
-input[type=checkbox]:checked + span:hover:before { 
+input[type=checkbox]:checked + span:hover:before, input[type=checkbox]:checked + label:before,
+input[type=checkbox]:checked + span:before { 
   filter: alpha(opacity=100); opacity: 1; 
 }
 
 /* Set radio buttons FA icons: normal, hover, checked, & checked hover */
 input[type=radio] + label:before { 
-  content: '\f10c';
+  content: '\f10c'!important;
 }
 input[type=radio] + label:hover:before { 
-  content: '\f192'; 
+  content: '\f192'!important; 
   filter: alpha(opacity=20); 
   opacity: 0.2; 
 }
 input[type=radio]:checked + label:before { 
-  content: '\f192'; 
+  content: '\f192'!important; 
 }
 input[type=radio]:checked + label:hover:before { 
   filter: alpha(opacity=100); opacity: 1; 
